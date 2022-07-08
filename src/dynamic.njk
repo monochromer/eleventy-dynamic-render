@@ -1,0 +1,21 @@
+---
+title: Dynamic Page
+permalink:
+  search: /dynamic/:categoryId/:postId
+categories:
+  - html
+  - css
+  - js
+---
+
+<h1>{{ title }}</h1>
+
+<h2>eleventy.serverless</h2>
+<pre><code>{{ eleventy.serverless | dump(2) }}</code></pre>
+
+<h2>page</h2>
+<pre><code>{{ page | dump(2) }}</code></pre>
+
+<h2>frontmatter data</h2>
+<pre><code>{{ title | dump(2) }}</code></pre>
+<pre><code>{{ categories | dump(2) }}</code></pre>
